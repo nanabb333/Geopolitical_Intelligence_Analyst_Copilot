@@ -1,0 +1,5 @@
+query_id,query,scenario_type
+Q001,US announces a new semiconductor subsidy package.,semiconductor_state_support
+Q002,The United States announces new export controls on advanced AI chips and semiconductor manufacturing equipment for China-linked buyers.,export_control
+Q003,China announces export controls on gallium and germanium.,export_control
+Q004,Congress passes a new semiconductor subsidy package for domestic fabrication capacity.,semiconductor_state_support
