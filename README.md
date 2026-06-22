@@ -55,6 +55,34 @@ python3 src/run_scenario.py \
 
 The command writes a Markdown brief and also prints it to stdout.
 
+## Analyst Workbench
+
+The Analyst Workbench expands the original question-to-brief demo into a deterministic analyst workflow:
+
+```text
+Question
+  -> Scenario Classification
+  -> Historical Analogue Retrieval
+  -> Market Reaction Comparison
+  -> Observed Pathway Generation
+  -> Executive Memo
+  -> Export Package
+```
+
+`src/run_scenario.py` now generates a structured Markdown workbench report with clearly separated sections:
+
+- A. Scenario Classification
+- B. Historical Analogues
+- C. Market Reaction Comparison
+- D. Observed Pathways
+- E. Executive Memo
+
+The workflow preserves the existing classification and retrieval logic. It extends orchestration and presentation by packaging matched classification terms, ranked analogues, observed event-study reaction summaries, deterministic pathway frames, executive memo language, and export-package metadata into one analyst-ready report.
+
+Use it when a portfolio manager, risk committee, strategy team, or analyst-review process needs a disciplined first-pass scenario memo grounded in local historical analogues. The workbench remains deterministic: it uses local CSV files only and does not add LLM calls, APIs, dashboards, real-time monitoring, forecasting, or investment recommendations.
+
+See [Analyst Workbench](docs/analyst_workbench.md) for workflow details, inputs, outputs, and intended use.
+
 ## Example User Query
 
 ```text
@@ -107,6 +135,7 @@ Geopolitical_Intelligence_Analyst_Copilot/
 
 ## Documentation
 
+- [Analyst Workbench](docs/analyst_workbench.md)
 - [Product Spec](docs/product_spec.md)
 - [Architecture](docs/architecture.md)
 - [Methodology](docs/methodology.md)
@@ -115,12 +144,13 @@ Geopolitical_Intelligence_Analyst_Copilot/
 
 ## Core Scripts
 
-- `src/run_scenario.py`: main orchestration CLI
+- `src/run_scenario.py`: main Analyst Workbench orchestration CLI
 - `src/classify_event.py`: deterministic rule-based event classification
 - `src/retrieve_analogs.py`: weighted historical analog retrieval
 - `src/compare_market_reactions.py`: observed event-study reaction summaries
 - `src/generate_pathways.py`: deterministic qualitative scenario pathways
-- `src/generate_brief.py`: Markdown executive brief generation
+- `src/generate_workbench_report.py`: structured Markdown Analyst Workbench report generation
+- `src/generate_brief.py`: legacy Markdown executive brief generation
 
 Existing scripts remain directly runnable for inspection and debugging.
 
