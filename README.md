@@ -1,12 +1,133 @@
 # Geopolitical Intelligence Analyst Copilot
 
-A portfolio-ready analyst workflow copilot for geopolitical scenario intake, event classification, historical analog retrieval, market-reaction context, and Markdown memo generation.
+Geopolitical Intelligence Analyst Copilot is a deterministic workflow automation product for geopolitical risk analysis. It turns analyst questions into structured intelligence briefs by combining scenario classification, historical analogue retrieval, observed market-reaction context, pathway framing, and Markdown memo export.
 
-This repository converts a user-described geopolitical event into a deterministic historical analog analysis using a local event-study database. It is designed as a research-to-intelligence workflow automation layer, not a forecasting system or investment tool.
+The repository demonstrates business analytics, risk analytics, workflow automation, and product thinking in a local, auditable Python project. It is designed as a research-to-intelligence productivity layer, not a forecasting system, trading tool, or investment recommendation engine.
 
-## Product Vision
+## Product Overview
 
-Geopolitical risk analysis should be grounded in historically comparable events before it is turned into executive decision support. This copilot takes a user question, classifies the event, retrieves similar historical analogs, summarizes observed market reactions from the event-study database, and produces a conservative executive brief.
+The product helps analysts move from an unstructured geopolitical question to a structured evidence brief suitable for portfolio manager, risk committee, strategy team, or graduate portfolio review.
+
+It is intentionally scoped as an analyst productivity tool. It does not replace analyst judgement, ingest live news, call external APIs, use LLMs, make forecasts, estimate probabilities, or recommend investments.
+
+## Demo Workflow
+
+```text
+Question
+  -> Scenario Classification
+  -> Historical Analogue Retrieval
+  -> Market Reaction Comparison
+  -> Observed Pathway Generation
+  -> Executive Memo
+  -> Markdown Export
+```
+
+The demo workflow is implemented through local CSV inputs and standard-library Python. Each step remains auditable:
+
+- scenario classification uses deterministic keyword rules;
+- historical analogue retrieval uses local coded events and transparent similarity scoring;
+- market comparison summarizes local event-study rows only;
+- observed pathways are deterministic analyst-review frames;
+- executive memo generation packages the evidence into a reusable Markdown report.
+
+## How To Run
+
+Run the main scenario workflow from the repository root:
+
+```bash
+python3 src/run_scenario.py \
+  --query "US announces a new semiconductor subsidy package." \
+  --top-k 5 \
+  --output results/semiconductor_subsidy_brief.md
+```
+
+Generate the Analyst Workbench report directly:
+
+```bash
+python3 src/generate_workbench_report.py \
+  "US announces a new semiconductor subsidy package." \
+  --top-k 5 \
+  --output results/analyst_workbench_report.md
+```
+
+Run validation:
+
+```bash
+python3 -m compileall src
+python3 -m unittest discover tests
+```
+
+## Validation Evidence
+
+The repository includes a Validation & Evidence Package for portfolio review:
+
+- [Analyst Validation Suite](docs/analyst_validation_suite.md)
+- [Workflow Acceptance Tests](docs/workflow_acceptance_tests.md)
+- [Example Analyst Questions](docs/example_questions.md)
+
+Current validation status:
+
+- `python3 -m compileall src`: PASS
+- `python3 -m unittest discover tests`: PASS
+- Unit test result: 9 tests passing
+- Workbench report sections A-E: covered by tests
+- Safety-boundary language: covered by tests
+- No source logic changed during the evidence package sprint
+- Classification, retrieval, scoring, and report-generation logic preserved during this README packaging sprint
+
+## Portfolio Value
+
+This project is relevant to analytics and risk roles because it demonstrates how structured data, deterministic logic, and clear product framing can improve analyst throughput without overstating automation.
+
+- Business Analytics: converts an ambiguous decision-support workflow into repeatable inputs, outputs, documentation, and validation evidence.
+- Risk Analytics: structures geopolitical scenarios around historical analogues, observed event windows, uncertainty notes, and safety boundaries.
+- Workflow Automation: automates intake-to-memo packaging while preserving transparent intermediate steps for analyst review.
+- AI-assisted decision support: shows where deterministic automation can support intelligence workflows without LLM calls or opaque prediction claims.
+- Analyst Productivity: reduces first-pass memo assembly work and gives reviewers a consistent evidence format.
+
+## Example Analyst Questions
+
+Representative analyst questions are grouped by:
+
+- Taiwan Risk
+- Semiconductor Policy
+- Military Escalation
+- Strategic Investment
+- Technology Restrictions
+
+See [Example Analyst Questions](docs/example_questions.md) for the full 15-question set.
+
+## Representative Outputs
+
+Placeholder documentation files are available for curated portfolio examples:
+
+- [Taiwan Blockade](docs/example_outputs/taiwan_blockade.md)
+- [Export Controls](docs/example_outputs/export_controls.md)
+- [Semiconductor Sanctions](docs/example_outputs/semiconductor_sanctions.md)
+- [Military Exercise](docs/example_outputs/military_exercise.md)
+- [Strategic Investment](docs/example_outputs/strategic_investment.md)
+
+These files are documentation placeholders for future generated reports. They do not add product functionality.
+
+## Reproducibility
+
+Run validation from the repository root:
+
+```bash
+python3 -m compileall src
+python3 -m unittest discover tests
+```
+
+Generate a deterministic workbench report:
+
+```bash
+python3 src/run_scenario.py \
+  --query "US announces a new semiconductor subsidy package." \
+  --top-k 5 \
+  --output results/semiconductor_subsidy_brief.md
+```
+
+The same query and local CSV inputs produce the same report. No external APIs, LLM calls, live news feeds, dashboards, forecasting modules, or investment-recommendation logic are used.
 
 ## What The System Does
 
@@ -41,19 +162,6 @@ The workflow produces:
 - No investment recommendations
 
 Similarity scores are deterministic retrieval scores only. They are not probabilities.
-
-## Quick Start
-
-Run from the repository root:
-
-```bash
-python3 src/run_scenario.py \
-  --query "US announces a new semiconductor subsidy package." \
-  --top-k 5 \
-  --output results/semiconductor_subsidy_brief.md
-```
-
-The command writes a Markdown brief and also prints it to stdout.
 
 ## Analyst Workbench
 
@@ -136,6 +244,9 @@ Geopolitical_Intelligence_Analyst_Copilot/
 ## Documentation
 
 - [Analyst Workbench](docs/analyst_workbench.md)
+- [Analyst Validation Suite](docs/analyst_validation_suite.md)
+- [Workflow Acceptance Tests](docs/workflow_acceptance_tests.md)
+- [Example Analyst Questions](docs/example_questions.md)
 - [Product Spec](docs/product_spec.md)
 - [Architecture](docs/architecture.md)
 - [Methodology](docs/methodology.md)
