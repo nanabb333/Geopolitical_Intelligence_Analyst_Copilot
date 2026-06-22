@@ -4,9 +4,13 @@
 
 Analyst question placeholder for state-backed strategic investment in domestic semiconductor or critical technology capacity.
 
+## Coverage Status
+
+Supported when framed as semiconductor fabs, CHIPS Act support, or state-backed semiconductor capacity. Unsupported for broad strategic investment outside the semiconductor domain.
+
 ## Intended Use
 
-Use this placeholder to document a future generated Analyst Workbench report for industrial-policy or strategic-investment review.
+Use this placeholder to document a future generated Analyst Workbench report for semiconductor industrial-policy or strategic-investment review.
 
 ## Suggested Command
 

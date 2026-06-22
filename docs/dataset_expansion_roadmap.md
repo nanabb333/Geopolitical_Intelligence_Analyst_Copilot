@@ -151,11 +151,19 @@ Required standards:
 
 Recommended next sprint: "V2 Dataset Expansion Planning and Schema Hardening."
 
+Use the V2 dataset architecture documents as governing references:
+
+- [Dataset Schema V2](dataset_schema_v2.md)
+- [Event Coding Template](event_coding_template.md)
+- [Event Dictionary](event_dictionary.md)
+- [Coding Rules](coding_rules.md)
+- [V2 Dataset Readiness Assessment](v2_dataset_readiness_assessment.md)
+
 Suggested scope:
 
 1. Freeze V1 code and current validation package.
-2. Add a data dictionary for existing and proposed event fields.
-3. Create an event-coding template for new categories.
+2. Use `docs/dataset_schema_v2.md` as the target schema for candidate events.
+3. Use `docs/event_coding_template.md` and `docs/event_dictionary.md` for all candidate-event coding.
 4. Select 2 expansion categories for pilot coding: Taiwan military tension and shipping/maritime disruption.
 5. Code 10-15 candidate events without changing retrieval or report-generation logic.
 6. Run a coverage review before deciding whether source logic needs any V2 extensions.

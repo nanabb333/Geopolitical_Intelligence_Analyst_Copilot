@@ -4,9 +4,13 @@
 
 Analyst question placeholder for export controls on advanced semiconductors, AI chips, or related manufacturing equipment.
 
+## Coverage Status
+
+Supported. The current dataset includes U.S. advanced-chip controls, semiconductor controls, Japan semiconductor-equipment export controls, and related technology-restriction cases.
+
 ## Intended Use
 
-Use this placeholder to document a future generated Analyst Workbench report for technology-restriction review.
+Use this placeholder to document a future generated Analyst Workbench report for semiconductor technology-restriction review.
 
 ## Suggested Command
 
