@@ -2,11 +2,11 @@
 
 ## Product Goal
 
-Build a minimal geopolitical scenario intelligence engine that converts a user-described event into a structured historical analog brief using the existing event-study database.
+Build a lightweight Geopolitical Intelligence Analyst Copilot that converts a user-described event into a structured historical analog brief using the existing event-study database.
 
 ## User
 
-Primary V0.1 users are researchers, analysts, and strategy teams who need to translate a geopolitical event narrative into a disciplined historical comparison.
+Primary V0.1 users are researchers, analysts, and strategy teams who need to translate a geopolitical event narrative into a disciplined historical comparison and reusable Markdown memo.
 
 ## User Workflow
 

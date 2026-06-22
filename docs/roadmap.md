@@ -2,7 +2,7 @@
 
 ## V0.1: Publication-Ready Deterministic MVP
 
-Goal: make the local historical analog workflow credible, reproducible, and clear for GitHub publication.
+Goal: make the local analyst workflow copilot credible, reproducible, and clear for GitHub publication.
 
 Included:
 
@@ -54,9 +54,9 @@ Planned:
 - `pathways.json`
 - `brief.md`
 
-## V1.0: Scenario Intelligence Workflow
+## V1.0: Geopolitical Intelligence Analyst Copilot Workflow
 
-Goal: deliver a complete research-to-intelligence workflow suitable for portfolio demonstration and analyst review.
+Goal: deliver a complete research-to-intelligence workflow automation layer suitable for portfolio demonstration and analyst review.
 
 Planned:
 

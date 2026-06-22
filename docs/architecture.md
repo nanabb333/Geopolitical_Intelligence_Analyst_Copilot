@@ -1,5 +1,7 @@
 # Architecture
 
+Geopolitical Intelligence Analyst Copilot is a deterministic analyst workflow layer for scenario intake, classification, historical analog retrieval, market-reaction context, and Markdown memo generation.
+
 ## Design Principles
 
 - Deterministic before generative
@@ -7,6 +9,7 @@
 - Transparent scoring before opaque ranking
 - Historical analogs before future claims
 - Research auditability before workflow automation
+- Analyst productivity before product sprawl
 
 ## Components
 

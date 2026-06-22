@@ -1,14 +1,14 @@
-# Geopolitical Scenario Intelligence Engine
+# Geopolitical Intelligence Analyst Copilot
 
-Repo 4: Scenario Intelligence Layer.
+Analyst Workflow Copilot.
 
-A deterministic scenario intelligence engine that turns geopolitical event descriptions into historical analog retrieval, market-reaction context, and executive decision-support briefs.
+A lightweight deterministic analyst workflow copilot that converts geopolitical scenario questions into structured intelligence briefs using transparent classification, historical analog retrieval, and Markdown memo generation.
 
-This repository converts a user-described geopolitical event into a deterministic historical analog analysis using a local event-study database. It is designed as a research-to-intelligence product layer, not a forecasting system or investment tool.
+This repository converts a user-described geopolitical event into a deterministic historical analog analysis using a local event-study database. It is designed as a research-to-intelligence workflow automation layer, not a forecasting system or investment tool.
 
 ## Product Vision
 
-Geopolitical risk analysis should be grounded in historically comparable events before it is turned into executive decision support. This MVP takes a user question, classifies the event, retrieves similar historical analogs, summarizes observed market reactions from the event-study database, and produces a conservative executive brief.
+Geopolitical risk analysis should be grounded in historically comparable events before it is turned into executive decision support. This copilot takes a user question, classifies the event, retrieves similar historical analogs, summarizes observed market reactions from the event-study database, and produces a conservative executive brief.
 
 ## What The System Does
 
@@ -78,7 +78,7 @@ Additional curated examples are available in `examples/`.
 ## Repository Structure
 
 ```text
-geopolitical_scenario_intelligence_engine/
+Geopolitical_Intelligence_Analyst_Copilot/
   data/
     events.csv
     event_firm_returns.csv
@@ -132,18 +132,19 @@ Existing scripts remain directly runnable for inspection and debugging.
 - `data/event_firm_returns.csv`: event-level firm return outcomes and abnormal return windows
 - `data/sample_user_queries.csv`: example user questions for local testing
 
+## Relationship to Flagship System
+
+Opportunity Under Geopolitical Competition
+= flagship evidence-intelligence system
+
+Geopolitical Intelligence Analyst Copilot
+= workflow automation layer
+
+The flagship system contains the broader evidence base and geopolitical competition framing. This copilot focuses on analyst productivity: scenario intake, classification, retrieval, and memo generation.
+
 ## Portfolio Positioning
 
-This repo is the scenario intelligence layer in a four-repo portfolio:
-
-```text
-Repo 1: Political economy research and historical event database
-Repo 2: Event-study analytics engine
-Repo 3: AI geopolitical risk dashboard
-Repo 4: Historical analog scenario intelligence engine
-```
-
-It demonstrates how research assets and event-study outputs can be converted into an auditable product workflow for executive risk analysis.
+Geopolitical Intelligence Analyst Copilot demonstrates how research assets and event-study outputs can be converted into an auditable deterministic analyst workflow copilot for executive risk analysis.
 
 ## Skills Demonstrated
 

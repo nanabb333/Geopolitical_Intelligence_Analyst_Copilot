@@ -2,7 +2,7 @@
 
 ## Overview
 
-V0.1 converts a user-described geopolitical event into a historical analog brief using local CSV inputs only. The workflow is deterministic and auditable:
+V0.1 of Geopolitical Intelligence Analyst Copilot converts a user-described geopolitical event into a historical analog brief using local CSV inputs only. The workflow is deterministic and auditable:
 
 ```text
 User description
@@ -84,7 +84,7 @@ The pathways are decision-support frames, not forecasts.
 
 `src/generate_brief.py` assembles the classification, analogs, market reaction summaries, pathways, risks, and executive summary into a Markdown brief.
 
-`src/run_scenario.py` is the main product CLI for running the complete workflow.
+`src/run_scenario.py` is the main copilot CLI for running the complete analyst workflow.
 
 ## Interpretation Limits
 

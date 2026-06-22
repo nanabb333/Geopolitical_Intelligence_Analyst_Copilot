@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This repository provides historical analog decision-support for geopolitical risk analysis. It is not a forecasting product and not an investment advisory tool.
+Geopolitical Intelligence Analyst Copilot provides historical analog decision-support for geopolitical risk analysis. It is not a forecasting product and not an investment advisory tool.
 
 ## Explicit Non-Goals
 
@@ -42,6 +42,7 @@ Appropriate use cases include:
 - executive risk brief preparation
 - historical analog comparison
 - scenario planning discussion
+- analyst workflow automation
 - methodology demonstration
 
 The output should always be reviewed by a human analyst before operational use.
