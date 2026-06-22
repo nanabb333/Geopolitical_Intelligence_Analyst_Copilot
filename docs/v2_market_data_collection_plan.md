@@ -6,6 +6,11 @@ The US-China Strategic Competition pilot dataset needs a market reaction data la
 
 This plan defines how to collect event-linked market rows without inventing reactions, overstating evidence, or adding forecasts.
 
+Planning references:
+
+- [V2 Market Mapping Plan](v2_market_mapping_plan.md)
+- [V2 Pilot Event Selection](v2_pilot_event_selection.md)
+
 ## Market Data Objective
 
 The objective is to create a reproducible market dataset that links selected V2 pilot events to observed historical asset, sector, index, or commodity returns.
@@ -76,7 +81,11 @@ Recommended first batch:
 - one export-control event;
 - one entity-list or procurement-restriction event;
 - one critical-minerals event;
-- one strategic investment-screening event.
+- one strategic investment-screening event;
+- one industrial-policy event;
+- one supply-chain relocation event.
+
+The current representative selection is documented in [V2 Pilot Event Selection](v2_pilot_event_selection.md), with proxy and benchmark planning details in [V2 Market Mapping Plan](v2_market_mapping_plan.md).
 
 ## Quality Control Rules
 
@@ -104,8 +113,8 @@ Recommended next sprint: V2 Market Data Template Validation.
 
 Scope:
 
-1. Create a reviewed candidate list of 5-7 events.
-2. Select asset and benchmark proxies.
+1. Review the selected 5-7 events in [V2 Pilot Event Selection](v2_pilot_event_selection.md).
+2. Confirm asset and benchmark proxies from [V2 Market Mapping Plan](v2_market_mapping_plan.md).
 3. Validate event-date and trading-calendar conventions.
 4. Populate a small market-data sample only with real sourced returns.
 5. Add CSV integrity tests for populated rows.
